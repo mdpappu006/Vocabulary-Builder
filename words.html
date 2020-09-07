@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo/Tasks</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="voc">
+
+<div class="sidebar">
+    <h4>Menu</h4>
+    <ul class="menu">
+        <li><a href="words.php" class="menu-item" data-target="words">All Words</a></li>
+        <li><a href="#" class="menu-item" data-target="wordform">Add New Word</a></li>
+        <li><a href="logout.php">Logout</a></li>
+    </ul>
+</div>
+
+<div class="container" id="main">
+    <h1 class="maintitle">
+        <i class="fas fa-language"></i> <br/>My Vocabularies
+    </h1>
+
+    <div class="wordsc helement" id="words">
+        <div class="row">
+            <div class="column column-50">
+                <div class="alphabets">
+                    <select id="alphabets">
+                        <option value="all">All Words</option>
+                        <option value="A">A#</option>
+                        <option value="B">B#</option>
+                        <option value="C">C#</option>
+                        <option value="D">D#</option>
+                        <option value="N">N#</option>
+                        <option value="M">M#</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="column column-50">
+                <form action="" method="POST">
+                    <button class="float-right" name="submit" value="submit">Search</button>
+                    <input type="text" name="search" class="float-right" placeholder="Search">
+                </form>
+            </div>
+        </div>
+
+        <hr>
+        <table class="words">
+            <thead>
+                <tr>
+                    <th width="20%">Word</th>
+                    <th>Definition</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ramdom Word</td>
+                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Blanditiis fugit, eos dignissimos beatae sequi.</td>
+                </tr>                        
+
+                <tr>
+                    <td>Ramdom Word</td>
+                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Blanditiis fugit, eos dignissimos beatae sequi.</td>
+                </tr>
+
+                <tr>
+                    <td>Ramdom Word</td>
+                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Blanditiis fugit, eos dignissimos beatae sequi.</td>
+                </tr>                        
+
+                <tr>
+                    <td>Ramdom Word</td>
+                    <td>Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Blanditiis fugit, eos dignissimos beatae sequi.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+</html>
